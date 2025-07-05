@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+$theme-colors: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  success: $color-success,
+  warning: $color-warning,
+  error: $color-error,
+  disabled: $color-disabled,
+  neutral: $color-neutral
+);
+
+@function theme-color($name) {
+  @return map-get($theme-colors, $name);
+}

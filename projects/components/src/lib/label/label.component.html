@@ -1,0 +1,16 @@
+<label
+  class="lib-label"
+  [attr.for]="for"
+  [class.lib-label--small]="size === 'small'"
+  [class.lib-label--large]="size === 'large'"
+  [class.lib-label--xlarge]="size === 'xlarge'"
+>
+  @if (text) {
+  <ng-container>
+    {{ text }}
+  </ng-container>
+  }
+  @if (required) {
+    <span aria-hidden="true" class="lib-label__required">(*)</span>
+  }
+</label>

@@ -1,0 +1,12 @@
+<button
+  [disabled]="disabled"
+  (click)="onClick()"
+  [ngClass]="[
+    'btn',
+    'btn-' + color,
+    'btn-' + size,
+    disabled ? 'btn-disabled' : ''
+  ]"
+>
+  {{ label }}
+</button>

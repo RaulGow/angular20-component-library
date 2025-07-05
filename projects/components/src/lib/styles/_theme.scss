@@ -1,0 +1,23 @@
+$theme-light: (
+  background: #ffffff,
+  text: #212529,
+  border: #dee2e6,
+  primary: #007bff,
+  disabled: #adb5bd
+);
+
+$theme-dark: (
+  background: #1e1e1e,
+  text: #f8f9fa,
+  border: #343a40,
+  primary: #4dabf7,
+  disabled: #495057
+);
+
+// Variable global de tema activo
+$active-theme: $theme-light;
+
+// Función para acceder al valor actual del tema
+@function themed($key) {
+  @return map-get($active-theme, $key);
+}

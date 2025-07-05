@@ -1,0 +1,26 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.lib-label {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: $font-family-base;
+
+  &--small {
+    font-size: 0.875rem;
+  }
+
+  &--large {
+    font-size: 1.125rem;
+  }
+
+  &--xlarge {
+    font-size: 1.25rem;
+  }
+
+  &__required {
+    color: $color-error;
+    margin-left: 0.25rem;
+  }
+}

@@ -1,0 +1,30 @@
+// --------------------------------------------------
+// 🎨 PALETA DE COLORES
+// --------------------------------------------------
+
+// Principales
+$color-primary:   #007bff;  // Azul (ej. botones, enlaces)
+$color-secondary: #6c757d;  // Gris medio (complementario)
+$color-tertiary:  #e2e6ea;  // Gris claro (fondos suaves)
+
+// Estados
+$color-success:   #28a745;  // Verde (éxito)
+$color-warning:   #ffc107;  // Amarillo (advertencia)
+$color-error:     #dc3545;  // Rojo (error)
+$color-disabled:  #adb5bd;  // Gris desactivado
+$color-neutral:   #f8f9fa;  // Fondo claro / neutral
+
+// Texto general
+$color-text:      #212529;  // Texto principal
+$color-muted:     #6c757d;  // Texto secundario
+
+// Tipografía
+$font-family-base: 'Segoe UI', Arial, sans-serif;
+$font-size-base: 1rem;
+
+// Espaciado
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;

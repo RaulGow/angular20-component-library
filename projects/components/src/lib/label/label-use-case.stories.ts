@@ -2,9 +2,8 @@ import { Meta, StoryObj } from '@storybook/angular';
 import { LabelComponent } from './label.component';
 
 const meta: Meta<LabelComponent> = {
-  title: 'Components/Label',
+  title: 'Components/Label/Use Cases',
   component: LabelComponent,
-  tags: ['autodocs'],
   args: {
     text: 'Nombre',
     for: 'nombre',
@@ -66,4 +65,45 @@ const meta: Meta<LabelComponent> = {
 export default meta;
 type Story = StoryObj<LabelComponent>;
 
-export const Default: Story = {};
+export const Required: Story = {
+  args: {
+    required: true,
+  },
+};
+
+export const InputAndDropdown: Story = {
+  args: {
+    context: 'dropdown',
+  },
+};
+export const InputAndDropdownRequired: Story = {
+  args: {
+    context: 'dropdown',
+    required: true,
+  },
+};
+
+export const Small: Story = {
+  args: {
+    size: 'small',
+  },
+};
+
+export const Medium: Story = {
+  args: {
+    size: 'medium',
+  },
+};
+
+export const Large: Story = {
+  args: {
+    size: 'large',
+  },
+};
+
+export const XLarge: Story = {
+  args: {
+    size: 'xlarge',
+  },
+};
+

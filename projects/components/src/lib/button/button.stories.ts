@@ -10,49 +10,168 @@ const meta: Meta<ButtonComponent> = {
       imports: [], // importante
     }),
   ],
+  args: {
+    label: 'Click me',
+    size: 'small',
+    color: 'primary',
+    variant: 'solid',
+    disabled: false,
+  },
   argTypes: {
-    label: { control: 'text', description: 'Button label text' },
     color: {
-      control: 'select',
-      options: ['primary', 'secondary', 'danger'],
-      description: 'Button color variant',
+      control: { type: 'select' },
+      options: ['primary', 'secondary', 'success', 'danger', 'warning'], // solo colores "solidos"
+    },
+    variant: {
+      control: { type: 'select' },
+      options: ['solid', 'outline', 'ghost'],
     },
     size: {
-      control: 'select',
+      control: { type: 'radio' },
       options: ['small', 'medium', 'large'],
-      description: 'Button size',
     },
-    disabled: { control: 'boolean', description: 'Disable the button' },
-    clicked: { action: 'clicked', description: 'Button click event' },
+    disabled: {
+      control: 'boolean',
+    },
+    label: {
+      control: 'text',
+    },
+    clicked: { action: 'clicked' },
   },
 };
 
 export default meta;
 type Story = StoryObj<ButtonComponent>;
 
-export const Primary: Story = {
+export const Default: Story = {
+  name: '💡 Default',
+};
+
+export const SolidPrimary: Story = {
   args: {
-    label: 'Click me',
     color: 'primary',
-    size: 'medium',
-    disabled: false,
+    variant: 'solid',
   },
 };
 
-export const Secondary: Story = {
+export const SolidSecondary: Story = {
   args: {
-    label: 'Secondary button',
     color: 'secondary',
-    size: 'medium',
-    disabled: false,
+    variant: 'solid',
   },
 };
 
-export const LargeDisabled: Story = {
+export const SolidSuccess: Story = {
   args: {
-    label: 'Disabled large',
+    color: 'success',
+    variant: 'solid',
+  },
+};
+
+export const SolidWarning: Story = {
+  args: {
+    color: 'warning',
+    variant: 'solid',
+  },
+};
+
+export const SolidDanger: Story = {
+  args: {
     color: 'danger',
-    size: 'large',
+    variant: 'solid',
+  },
+};
+
+export const OutlinePrimary: Story = {
+  args: {
+    color: 'primary',
+    variant: 'outline',
+  },
+};
+
+export const OutlineSecondary: Story = {
+  args: {
+    color: 'secondary',
+    variant: 'outline',
+  },
+};
+
+export const OutlineSuccess: Story = {
+  args: {
+    color: 'success',
+    variant: 'outline',
+  },
+};
+
+export const OutlineWarning: Story = {
+  args: {
+    color: 'warning',
+    variant: 'outline',
+  },
+};
+
+export const OutlineDanger: Story = {
+  args: {
+    color: 'danger',
+    variant: 'outline',
+  },
+};
+
+export const GhostPrimary: Story = {
+  args: {
+    color: 'primary',
+    variant: 'ghost',
+  },
+};
+
+export const GhostSecondary: Story = {
+  args: {
+    color: 'secondary',
+    variant: 'ghost',
+  },
+};
+
+export const GhostSuccess: Story = {
+  args: {
+    color: 'success',
+    variant: 'ghost',
+  },
+};
+
+export const GhostWarning: Story = {
+  args: {
+    color: 'warning',
+    variant: 'ghost',
+  },
+};
+
+export const GhostDanger: Story = {
+  args: {
+    color: 'danger',
+    variant: 'ghost',
+  },
+};
+
+export const Disabled: Story = {
+  args: {
     disabled: true,
+  },
+};
+
+export const Large: Story = {
+  args: {
+    size: 'large',
+  },
+};
+
+export const Medium: Story = {
+  args: {
+    size: 'medium',
+  },
+};
+
+export const Small: Story = {
+  args: {
+    size: 'small',
   },
 };

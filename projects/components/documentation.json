@@ -11,14 +11,144 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "LargeDisabled",
+                "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "projects/components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Disabled large',\r\n    color: 'danger',\r\n    size: 'large',\r\n    disabled: true,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  name: '💡 Default',\r\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/label/label.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
+                "name": "Disabled",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    disabled: true,\r\n  },\r\n}"
+            },
+            {
+                "name": "GhostDanger",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'danger',\r\n    variant: 'ghost',\r\n  },\r\n}"
+            },
+            {
+                "name": "GhostPrimary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'primary',\r\n    variant: 'ghost',\r\n  },\r\n}"
+            },
+            {
+                "name": "GhostSecondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'secondary',\r\n    variant: 'ghost',\r\n  },\r\n}"
+            },
+            {
+                "name": "GhostSuccess",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'success',\r\n    variant: 'ghost',\r\n  },\r\n}"
+            },
+            {
+                "name": "GhostWarning",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'warning',\r\n    variant: 'ghost',\r\n  },\r\n}"
+            },
+            {
+                "name": "InputAndDropdown",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    context: 'dropdown',\r\n  },\r\n}"
+            },
+            {
+                "name": "InputAndDropdownRequired",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    context: 'dropdown',\r\n    required: true,\r\n  },\r\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    size: 'large',\r\n  },\r\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    size: 'large',\r\n  },\r\n}"
+            },
+            {
+                "name": "Medium",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    size: 'medium',\r\n  },\r\n}"
+            },
+            {
+                "name": "Medium",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    size: 'medium',\r\n  },\r\n}"
             },
             {
                 "name": "meta",
@@ -28,7 +158,77 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
-                "defaultValue": "{\r\n  component: ButtonComponent,\r\n  title: 'Components/Button',\r\n  globals: { theme: 'dark' },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [], // importante\r\n    }),\r\n  ],\r\n  argTypes: {\r\n    label: { control: 'text', description: 'Button label text' },\r\n    color: {\r\n      control: 'select',\r\n      options: ['primary', 'secondary', 'danger'],\r\n      description: 'Button color variant',\r\n    },\r\n    size: {\r\n      control: 'select',\r\n      options: ['small', 'medium', 'large'],\r\n      description: 'Button size',\r\n    },\r\n    disabled: { control: 'boolean', description: 'Disable the button' },\r\n    clicked: { action: 'clicked', description: 'Button click event' },\r\n  },\r\n}"
+                "defaultValue": "{\r\n  component: ButtonComponent,\r\n  title: 'Components/Button',\r\n  globals: { theme: 'dark' },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [], // importante\r\n    }),\r\n  ],\r\n  args: {\r\n    label: 'Click me',\r\n    size: 'small',\r\n    color: 'primary',\r\n    variant: 'solid',\r\n    disabled: false,\r\n  },\r\n  argTypes: {\r\n    color: {\r\n      control: { type: 'select' },\r\n      options: ['primary', 'secondary', 'success', 'danger', 'warning'], // solo colores \"solidos\"\r\n    },\r\n    variant: {\r\n      control: { type: 'select' },\r\n      options: ['solid', 'outline', 'ghost'],\r\n    },\r\n    size: {\r\n      control: { type: 'radio' },\r\n      options: ['small', 'medium', 'large'],\r\n    },\r\n    disabled: {\r\n      control: 'boolean',\r\n    },\r\n    label: {\r\n      control: 'text',\r\n    },\r\n    clicked: { action: 'clicked' },\r\n  },\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<LabelComponent>",
+                "defaultValue": "{\r\n  title: 'Components/Label/Use Cases',\r\n  component: LabelComponent,\r\n  args: {\r\n    text: 'Nombre',\r\n    for: 'nombre',\r\n    required: false,\r\n    size: 'medium',\r\n    context: 'standalone',\r\n  },\r\n  argTypes: {\r\n    size: {\r\n      control: { type: 'radio' },\r\n      options: ['small', 'medium', 'large', 'xlarge'],\r\n      description: 'Tamaño del label. Ajusta el tamaño de la tipografía.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'small' | 'medium' | 'large' | 'xlarge'\" },\r\n        defaultValue: { summary: 'medium' },\r\n      },\r\n    },\r\n    required: {\r\n      control: 'boolean',\r\n      description: 'Indica si el campo es obligatorio y muestra un asterisco.',\r\n      table: {\r\n        category: 'Validación',\r\n        type: { summary: 'boolean' },\r\n        defaultValue: { summary: 'false' },\r\n      },\r\n    },\r\n    text: {\r\n      control: 'text',\r\n      description: 'Texto del label. También se puede proyectar contenido con ng-content.',\r\n      table: {\r\n        category: 'Contenido',\r\n        type: { summary: 'string' },\r\n        defaultValue: { summary: \"''\" },\r\n      },\r\n    },\r\n    for: {\r\n      control: 'text',\r\n      description: 'ID del input al que está vinculado el label (atributo `for`).',\r\n      table: {\r\n        category: 'Accesibilidad',\r\n        type: { summary: 'string' },\r\n        defaultValue: { summary: \"''\" },\r\n      },\r\n    },\r\n    context: {\r\n      control: { type: 'select' },\r\n      options: ['input', 'dropdown', 'standalone'],\r\n      description: 'Define el contexto visual en el que se usa el label, para aplicar estilos específicos.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'input' | 'dropdown' | 'standalone'\" },\r\n        defaultValue: { summary: 'standalone' },\r\n      },\r\n    },\r\n  },\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/label/label.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<LabelComponent>",
+                "defaultValue": "{\r\n  title: 'Components/Label',\r\n  component: LabelComponent,\r\n  tags: ['autodocs'],\r\n  args: {\r\n    text: 'Nombre',\r\n    for: 'nombre',\r\n    required: false,\r\n    size: 'medium',\r\n    context: 'standalone',\r\n  },\r\n  argTypes: {\r\n    size: {\r\n      control: { type: 'radio' },\r\n      options: ['small', 'medium', 'large', 'xlarge'],\r\n      description: 'Tamaño del label. Ajusta el tamaño de la tipografía.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'small' | 'medium' | 'large' | 'xlarge'\" },\r\n        defaultValue: { summary: 'medium' },\r\n      },\r\n    },\r\n    required: {\r\n      control: 'boolean',\r\n      description: 'Indica si el campo es obligatorio y muestra un asterisco.',\r\n      table: {\r\n        category: 'Validación',\r\n        type: { summary: 'boolean' },\r\n        defaultValue: { summary: 'false' },\r\n      },\r\n    },\r\n    text: {\r\n      control: 'text',\r\n      description: 'Texto del label. También se puede proyectar contenido con ng-content.',\r\n      table: {\r\n        category: 'Contenido',\r\n        type: { summary: 'string' },\r\n        defaultValue: { summary: \"''\" },\r\n      },\r\n    },\r\n    for: {\r\n      control: 'text',\r\n      description: 'ID del input al que está vinculado el label (atributo `for`).',\r\n      table: {\r\n        category: 'Accesibilidad',\r\n        type: { summary: 'string' },\r\n        defaultValue: { summary: \"''\" },\r\n      },\r\n    },\r\n    context: {\r\n      control: { type: 'select' },\r\n      options: ['input', 'dropdown', 'standalone'],\r\n      description: 'Define el contexto visual en el que se usa el label, para aplicar estilos específicos.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'input' | 'dropdown' | 'standalone'\" },\r\n        defaultValue: { summary: 'standalone' },\r\n      },\r\n    },\r\n  },\r\n}"
+            },
+            {
+                "name": "OutlineDanger",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'danger',\r\n    variant: 'outline',\r\n  },\r\n}"
+            },
+            {
+                "name": "OutlinePrimary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'primary',\r\n    variant: 'outline',\r\n  },\r\n}"
+            },
+            {
+                "name": "OutlineSecondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'secondary',\r\n    variant: 'outline',\r\n  },\r\n}"
+            },
+            {
+                "name": "OutlineSuccess",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'success',\r\n    variant: 'outline',\r\n  },\r\n}"
+            },
+            {
+                "name": "OutlineWarning",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'warning',\r\n    variant: 'outline',\r\n  },\r\n}"
             },
             {
                 "name": "preview",
@@ -38,27 +238,97 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\n  parameters: {\n    controls: {\n      expanded: true,\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n  },\n}"
+                "defaultValue": "{\r\n  parameters: {\r\n    controls: {\r\n      expanded: true,\r\n      matchers: {\r\n       color: /(background|color)$/i,\r\n       date: /Date$/i,\r\n      },\r\n    },\r\n  },\r\n}"
             },
             {
-                "name": "Primary",
+                "name": "Required",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    required: true,\r\n  },\r\n}"
+            },
+            {
+                "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "projects/components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Click me',\r\n    color: 'primary',\r\n    size: 'medium',\r\n    disabled: false,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    size: 'small',\r\n  },\r\n}"
             },
             {
-                "name": "Secondary",
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    size: 'small',\r\n  },\r\n}"
+            },
+            {
+                "name": "SolidDanger",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "projects/components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Secondary button',\r\n    color: 'secondary',\r\n    size: 'medium',\r\n    disabled: false,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    color: 'danger',\r\n    variant: 'solid',\r\n  },\r\n}"
+            },
+            {
+                "name": "SolidPrimary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'primary',\r\n    variant: 'solid',\r\n  },\r\n}"
+            },
+            {
+                "name": "SolidSecondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'secondary',\r\n    variant: 'solid',\r\n  },\r\n}"
+            },
+            {
+                "name": "SolidSuccess",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'success',\r\n    variant: 'solid',\r\n  },\r\n}"
+            },
+            {
+                "name": "SolidWarning",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    color: 'warning',\r\n    variant: 'solid',\r\n  },\r\n}"
+            },
+            {
+                "name": "XLarge",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    size: 'xlarge',\r\n  },\r\n}"
             }
         ],
         "functions": [],
@@ -73,20 +343,122 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<LabelComponent>",
+                "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<LabelComponent>",
+                "file": "projects/components/src/lib/label/label.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
             }
         ],
         "enumerations": [],
         "groupedVariables": {
             "projects/components/src/lib/button/button.stories.ts": [
                 {
-                    "name": "LargeDisabled",
+                    "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Disabled large',\r\n    color: 'danger',\r\n    size: 'large',\r\n    disabled: true,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  name: '💡 Default',\r\n}"
+                },
+                {
+                    "name": "Disabled",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    disabled: true,\r\n  },\r\n}"
+                },
+                {
+                    "name": "GhostDanger",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'danger',\r\n    variant: 'ghost',\r\n  },\r\n}"
+                },
+                {
+                    "name": "GhostPrimary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'primary',\r\n    variant: 'ghost',\r\n  },\r\n}"
+                },
+                {
+                    "name": "GhostSecondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'secondary',\r\n    variant: 'ghost',\r\n  },\r\n}"
+                },
+                {
+                    "name": "GhostSuccess",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'success',\r\n    variant: 'ghost',\r\n  },\r\n}"
+                },
+                {
+                    "name": "GhostWarning",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'warning',\r\n    variant: 'ghost',\r\n  },\r\n}"
+                },
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    size: 'large',\r\n  },\r\n}"
+                },
+                {
+                    "name": "Medium",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    size: 'medium',\r\n  },\r\n}"
                 },
                 {
                     "name": "meta",
@@ -96,27 +468,221 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonComponent>",
-                    "defaultValue": "{\r\n  component: ButtonComponent,\r\n  title: 'Components/Button',\r\n  globals: { theme: 'dark' },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [], // importante\r\n    }),\r\n  ],\r\n  argTypes: {\r\n    label: { control: 'text', description: 'Button label text' },\r\n    color: {\r\n      control: 'select',\r\n      options: ['primary', 'secondary', 'danger'],\r\n      description: 'Button color variant',\r\n    },\r\n    size: {\r\n      control: 'select',\r\n      options: ['small', 'medium', 'large'],\r\n      description: 'Button size',\r\n    },\r\n    disabled: { control: 'boolean', description: 'Disable the button' },\r\n    clicked: { action: 'clicked', description: 'Button click event' },\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  component: ButtonComponent,\r\n  title: 'Components/Button',\r\n  globals: { theme: 'dark' },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [], // importante\r\n    }),\r\n  ],\r\n  args: {\r\n    label: 'Click me',\r\n    size: 'small',\r\n    color: 'primary',\r\n    variant: 'solid',\r\n    disabled: false,\r\n  },\r\n  argTypes: {\r\n    color: {\r\n      control: { type: 'select' },\r\n      options: ['primary', 'secondary', 'success', 'danger', 'warning'], // solo colores \"solidos\"\r\n    },\r\n    variant: {\r\n      control: { type: 'select' },\r\n      options: ['solid', 'outline', 'ghost'],\r\n    },\r\n    size: {\r\n      control: { type: 'radio' },\r\n      options: ['small', 'medium', 'large'],\r\n    },\r\n    disabled: {\r\n      control: 'boolean',\r\n    },\r\n    label: {\r\n      control: 'text',\r\n    },\r\n    clicked: { action: 'clicked' },\r\n  },\r\n}"
                 },
                 {
-                    "name": "Primary",
+                    "name": "OutlineDanger",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Click me',\r\n    color: 'primary',\r\n    size: 'medium',\r\n    disabled: false,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'danger',\r\n    variant: 'outline',\r\n  },\r\n}"
                 },
                 {
-                    "name": "Secondary",
+                    "name": "OutlinePrimary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Secondary button',\r\n    color: 'secondary',\r\n    size: 'medium',\r\n    disabled: false,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'primary',\r\n    variant: 'outline',\r\n  },\r\n}"
+                },
+                {
+                    "name": "OutlineSecondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'secondary',\r\n    variant: 'outline',\r\n  },\r\n}"
+                },
+                {
+                    "name": "OutlineSuccess",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'success',\r\n    variant: 'outline',\r\n  },\r\n}"
+                },
+                {
+                    "name": "OutlineWarning",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'warning',\r\n    variant: 'outline',\r\n  },\r\n}"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    size: 'small',\r\n  },\r\n}"
+                },
+                {
+                    "name": "SolidDanger",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'danger',\r\n    variant: 'solid',\r\n  },\r\n}"
+                },
+                {
+                    "name": "SolidPrimary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'primary',\r\n    variant: 'solid',\r\n  },\r\n}"
+                },
+                {
+                    "name": "SolidSecondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'secondary',\r\n    variant: 'solid',\r\n  },\r\n}"
+                },
+                {
+                    "name": "SolidSuccess",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'success',\r\n    variant: 'solid',\r\n  },\r\n}"
+                },
+                {
+                    "name": "SolidWarning",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    color: 'warning',\r\n    variant: 'solid',\r\n  },\r\n}"
+                }
+            ],
+            "projects/components/src/lib/label/label.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/label/label.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/label/label.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<LabelComponent>",
+                    "defaultValue": "{\r\n  title: 'Components/Label',\r\n  component: LabelComponent,\r\n  tags: ['autodocs'],\r\n  args: {\r\n    text: 'Nombre',\r\n    for: 'nombre',\r\n    required: false,\r\n    size: 'medium',\r\n    context: 'standalone',\r\n  },\r\n  argTypes: {\r\n    size: {\r\n      control: { type: 'radio' },\r\n      options: ['small', 'medium', 'large', 'xlarge'],\r\n      description: 'Tamaño del label. Ajusta el tamaño de la tipografía.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'small' | 'medium' | 'large' | 'xlarge'\" },\r\n        defaultValue: { summary: 'medium' },\r\n      },\r\n    },\r\n    required: {\r\n      control: 'boolean',\r\n      description: 'Indica si el campo es obligatorio y muestra un asterisco.',\r\n      table: {\r\n        category: 'Validación',\r\n        type: { summary: 'boolean' },\r\n        defaultValue: { summary: 'false' },\r\n      },\r\n    },\r\n    text: {\r\n      control: 'text',\r\n      description: 'Texto del label. También se puede proyectar contenido con ng-content.',\r\n      table: {\r\n        category: 'Contenido',\r\n        type: { summary: 'string' },\r\n        defaultValue: { summary: \"''\" },\r\n      },\r\n    },\r\n    for: {\r\n      control: 'text',\r\n      description: 'ID del input al que está vinculado el label (atributo `for`).',\r\n      table: {\r\n        category: 'Accesibilidad',\r\n        type: { summary: 'string' },\r\n        defaultValue: { summary: \"''\" },\r\n      },\r\n    },\r\n    context: {\r\n      control: { type: 'select' },\r\n      options: ['input', 'dropdown', 'standalone'],\r\n      description: 'Define el contexto visual en el que se usa el label, para aplicar estilos específicos.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'input' | 'dropdown' | 'standalone'\" },\r\n        defaultValue: { summary: 'standalone' },\r\n      },\r\n    },\r\n  },\r\n}"
+                }
+            ],
+            "projects/components/src/lib/label/label-use-case.stories.ts": [
+                {
+                    "name": "InputAndDropdown",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    context: 'dropdown',\r\n  },\r\n}"
+                },
+                {
+                    "name": "InputAndDropdownRequired",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    context: 'dropdown',\r\n    required: true,\r\n  },\r\n}"
+                },
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    size: 'large',\r\n  },\r\n}"
+                },
+                {
+                    "name": "Medium",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    size: 'medium',\r\n  },\r\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<LabelComponent>",
+                    "defaultValue": "{\r\n  title: 'Components/Label/Use Cases',\r\n  component: LabelComponent,\r\n  args: {\r\n    text: 'Nombre',\r\n    for: 'nombre',\r\n    required: false,\r\n    size: 'medium',\r\n    context: 'standalone',\r\n  },\r\n  argTypes: {\r\n    size: {\r\n      control: { type: 'radio' },\r\n      options: ['small', 'medium', 'large', 'xlarge'],\r\n      description: 'Tamaño del label. Ajusta el tamaño de la tipografía.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'small' | 'medium' | 'large' | 'xlarge'\" },\r\n        defaultValue: { summary: 'medium' },\r\n      },\r\n    },\r\n    required: {\r\n      control: 'boolean',\r\n      description: 'Indica si el campo es obligatorio y muestra un asterisco.',\r\n      table: {\r\n        category: 'Validación',\r\n        type: { summary: 'boolean' },\r\n        defaultValue: { summary: 'false' },\r\n      },\r\n    },\r\n    text: {\r\n      control: 'text',\r\n      description: 'Texto del label. También se puede proyectar contenido con ng-content.',\r\n      table: {\r\n        category: 'Contenido',\r\n        type: { summary: 'string' },\r\n        defaultValue: { summary: \"''\" },\r\n      },\r\n    },\r\n    for: {\r\n      control: 'text',\r\n      description: 'ID del input al que está vinculado el label (atributo `for`).',\r\n      table: {\r\n        category: 'Accesibilidad',\r\n        type: { summary: 'string' },\r\n        defaultValue: { summary: \"''\" },\r\n      },\r\n    },\r\n    context: {\r\n      control: { type: 'select' },\r\n      options: ['input', 'dropdown', 'standalone'],\r\n      description: 'Define el contexto visual en el que se usa el label, para aplicar estilos específicos.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'input' | 'dropdown' | 'standalone'\" },\r\n        defaultValue: { summary: 'standalone' },\r\n      },\r\n    },\r\n  },\r\n}"
+                },
+                {
+                    "name": "Required",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    required: true,\r\n  },\r\n}"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    size: 'small',\r\n  },\r\n}"
+                },
+                {
+                    "name": "XLarge",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    size: 'xlarge',\r\n  },\r\n}"
                 }
             ],
             "projects/components/.storybook/preview.ts": [
@@ -128,7 +694,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\n  parameters: {\n    controls: {\n      expanded: true,\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n  },\n}"
+                    "defaultValue": "{\r\n  parameters: {\r\n    controls: {\r\n      expanded: true,\r\n      matchers: {\r\n       color: /(background|color)$/i,\r\n       date: /Date$/i,\r\n      },\r\n    },\r\n  },\r\n}"
                 }
             ]
         },
@@ -142,6 +708,32 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ButtonComponent>",
                     "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/components/src/lib/label/label-use-case.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<LabelComponent>",
+                    "file": "projects/components/src/lib/label/label-use-case.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/components/src/lib/label/label.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<LabelComponent>",
+                    "file": "projects/components/src/lib/label/label.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -170,7 +762,87 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "LargeDisabled",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Disabled",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "GhostDanger",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "GhostPrimary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "GhostSecondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "GhostSuccess",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "GhostWarning",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Medium",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -190,7 +862,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Primary",
+                "name": "OutlineDanger",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -200,13 +872,223 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Secondary",
+                "name": "OutlinePrimary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
                 "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "OutlineSecondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "OutlineSuccess",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "OutlineWarning",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SolidDanger",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SolidPrimary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SolidSecondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SolidSuccess",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SolidWarning",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "InputAndDropdown",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "InputAndDropdownRequired",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Medium",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Required",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "XLarge",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label-use-case.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/label/label.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",

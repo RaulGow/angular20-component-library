@@ -15,8 +15,26 @@ $color-disabled:  #adb5bd;  // Gris desactivado
 $color-neutral:   #f8f9fa;  // Fondo claro / neutral
 
 // Texto general
-$color-text:      #212529;  // Texto principal
-$color-muted:     #6c757d;  // Texto secundario
+$color-text-100: #000000; // Negro puro (máximo contraste, texto principal)
+$color-text-90:  #212529; // Muy oscuro (texto principal estándar)
+$color-text-70:  #495057; // Oscuro medio (texto secundario destacado)
+$color-text-50:  #6c757d; // Gris medio (texto secundario)
+$color-text-30:  #adb5bd; // Gris claro (texto deshabilitado o placeholders)
+$color-text-10:  #ced4da; // Gris muy claro (texto inactivo)
+$color-text-5:   #e9ecef; // Gris casi blanco (texto en fondos oscuros)
+$color-text-0:   #ffffff; // Blanco puro (texto sobre fondos muy oscuros)
+
+// Escala de grises (más claro a más oscuro)
+$gray-50:   #f9fafb;  // Muy claro - fondos muy suaves
+$gray-100:  #f3f4f6;  // Fondo claro
+$gray-200:  #e5e7eb;  // Bordes o fondos de inputs
+$gray-300:  #d1d5db;
+$gray-400:  #9ca3af;
+$gray-500:  #6b7280;  // ⭐ RECOMENDADO para standalone (color accesible y neutro)
+$gray-600:  #4b5563;  // ⭐ Más accesible (mayor contraste)
+$gray-700:  #374151;
+$gray-800:  #1f2937;
+$gray-900:  #111827;  // Muy oscuro - textos destacados sobre fondos claros
 
 // Tipografía
 $font-family-base: 'Segoe UI', Arial, sans-serif;

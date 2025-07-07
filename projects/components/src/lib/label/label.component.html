@@ -1,9 +1,13 @@
 <label
   class="lib-label"
   [attr.for]="for"
+  [class.is-focused]="isFocused"
   [class.lib-label--small]="size === 'small'"
   [class.lib-label--large]="size === 'large'"
   [class.lib-label--xlarge]="size === 'xlarge'"
+  [class.lib-label--input]="context === 'input'"
+  [class.lib-label--dropdown]="context === 'dropdown'"
+  [class.lib-label--standalone]="context === 'standalone'"
 >
   @if (text) {
   <ng-container>

@@ -1,12 +1,24 @@
 <button
+  type="button"
   [disabled]="disabled"
+  [attr.aria-disabled]="disabled"
   (click)="onClick()"
-  [ngClass]="[
-    'btn',
-    'btn-' + color,
-    'btn-' + size,
-    disabled ? 'btn-disabled' : ''
-  ]"
+  class="btn"
+  [class.btn-solid]="variant === 'solid'"
+  [class.btn-outline]="variant === 'outline'"
+  [class.btn-ghost]="variant === 'ghost'"
+
+  [class.btn-primary]="color === 'primary'"
+  [class.btn-secondary]="color === 'secondary'"
+  [class.btn-success]="color === 'success'"
+  [class.btn-danger]="color === 'danger'"
+  [class.btn-warning]="color === 'warning'"
+
+  [class.btn-small]="size === 'small'"
+  [class.btn-medium]="size === 'medium'"
+  [class.btn-large]="size === 'large'"
+
+  [class.btn-disabled]="disabled"
 >
   {{ label }}
 </button>

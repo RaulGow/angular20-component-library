@@ -6,6 +6,19 @@
   font-weight: 500;
   font-size: 1rem;
   font-family: $font-family-base;
+  color: #333; // por defecto
+
+  &--input {
+    color: var(--lib-label-color-input, $gray-500); // Azul para input
+  }
+
+  &--dropdown {
+    color: var(--lib-label-color-dropdown, $gray-500);
+  }
+
+  &--standalone {
+    color: var(--lib-label-color-standalone, $color-text-90);
+  }
 
   &--small {
     font-size: 0.875rem;
@@ -23,4 +36,11 @@
     color: $color-error;
     margin-left: 0.25rem;
   }
+}
+
+.lib-label.is-focused {
+  outline: 2px solid $color-primary;
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+  transition: outline 0.2s ease-in-out;
 }

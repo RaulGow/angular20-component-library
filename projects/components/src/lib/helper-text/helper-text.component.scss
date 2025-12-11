@@ -1,0 +1,67 @@
+@use "sass:color";
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.lib-helper-text {
+  display: block;
+  font-family: $font-family-base;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: $color-text-90; // color por defecto para texto de ayuda
+
+  // Transición para mostrar/ocultar suavemente
+  transition: opacity 150ms ease, transform 150ms ease;
+
+  &.hidden {
+    opacity: 0;
+    transform: translateY(-2px);
+    pointer-events: none;
+  }
+
+  // Tamaños opcionales
+  &--small {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  &--large {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+  }
+
+  &--xlarge {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
+
+  // Estados semánticos
+  &.is-info {
+    color: $color-text-90; // neutral / info
+  }
+
+  &.is-success {
+    color: $color-success;
+  }
+
+  &.is-warning {
+    color: $color-warning;
+  }
+
+  &.is-error {
+    color: $color-error;
+  }
+
+  // Contexto visual opcional
+  &--input {
+    color: $color-text-90; // no se usa
+  }
+
+  &--dropdown {
+    color: $color-text-90; // no se usa
+  }
+
+  &--standalone {
+    color: $color-text-90; // no se usa
+  }
+}

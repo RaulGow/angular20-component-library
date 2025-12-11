@@ -1,0 +1,24 @@
+<div
+  class="lib-helper-text"
+  [attr.id]="id"
+  [attr.role]="type === 'error' ? 'alert' : 'note'"
+  [attr.aria-live]="ariaLive"
+  [class.hidden]="!show"
+  [class.lib-helper-text--small]="size === 'small'"
+  [class.lib-helper-text--medium]="size === 'medium'"
+  [class.lib-helper-text--large]="size === 'large'"
+  [class.lib-helper-text--xlarge]="size === 'xlarge'"
+  [class.lib-helper-text--input]="context === 'input'"
+  [class.lib-helper-text--dropdown]="context === 'dropdown'"
+  [class.lib-helper-text--standalone]="context === 'standalone'"
+  [class.is-info]="type === 'info'"
+  [class.is-success]="type === 'success'"
+  [class.is-warning]="type === 'warning'"
+  [class.is-error]="type === 'error'"
+>
+  @if(text) {
+    {{ text }}
+  } @else {
+    <ng-content />
+  }
+</div>

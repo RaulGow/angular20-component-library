@@ -5,31 +5,35 @@
   display: inline-block;
   font-weight: 500;
   font-size: 1rem;
+  line-height: 1rem;
   font-family: $font-family-base;
-  color: #333; // por defecto
+  color: $color-text-90; // por defecto
 
   &--input {
-    color: var(--lib-label-color-input, $gray-500); // Azul para input
+    color: var(--lib-label-color-input, $color-text-90); // no se usa
   }
 
   &--dropdown {
-    color: var(--lib-label-color-dropdown, $gray-500);
+    color: var(--lib-label-color-dropdown, $color-text-90); // no se usa
   }
 
   &--standalone {
-    color: var(--lib-label-color-standalone, $color-text-90);
+    color: var(--lib-label-color-standalone, $color-text-90); // no se usa
   }
 
   &--small {
     font-size: 0.875rem;
+    line-height: 1rem;
   }
 
   &--large {
     font-size: 1.125rem;
+    line-height: 1.125rem;
   }
 
   &--xlarge {
     font-size: 1.25rem;
+    line-height: 1.25rem;
   }
 
   &__required {

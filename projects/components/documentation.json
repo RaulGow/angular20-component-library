@@ -342,7 +342,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 183
+                "kind": 184
             },
             {
                 "name": "Story",
@@ -353,7 +353,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 183
+                "kind": 184
             },
             {
                 "name": "Story",
@@ -364,7 +364,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 183
+                "kind": 184
             }
         ],
         "enumerations": [],
@@ -711,7 +711,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 183
+                    "kind": 184
                 }
             ],
             "projects/components/src/lib/label/label-use-case.stories.ts": [
@@ -724,7 +724,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 183
+                    "kind": 184
                 }
             ],
             "projects/components/src/lib/label/label.stories.ts": [
@@ -737,12 +737,16 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 183
+                    "kind": 184
                 }
             ]
         }
     },
-    "routes": [],
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "children": []
+    },
     "coverage": {
         "count": 0,
         "status": "low",

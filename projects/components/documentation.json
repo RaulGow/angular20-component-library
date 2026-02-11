@@ -24,6 +24,16 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/components/src/lib/helper-text/helper-text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/components/src/lib/label/label.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -159,6 +169,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
                 "defaultValue": "{\r\n  component: ButtonComponent,\r\n  title: 'Components/Button',\r\n  globals: { theme: 'dark' },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [], // importante\r\n    }),\r\n  ],\r\n  args: {\r\n    label: 'Click me',\r\n    size: 'small',\r\n    color: 'primary',\r\n    variant: 'solid',\r\n    disabled: false,\r\n  },\r\n  argTypes: {\r\n    color: {\r\n      control: { type: 'select' },\r\n      options: ['primary', 'secondary', 'success', 'danger', 'warning'], // solo colores \"solidos\"\r\n    },\r\n    variant: {\r\n      control: { type: 'select' },\r\n      options: ['solid', 'outline', 'ghost'],\r\n    },\r\n    size: {\r\n      control: { type: 'radio' },\r\n      options: ['small', 'medium', 'large'],\r\n    },\r\n    disabled: {\r\n      control: 'boolean',\r\n    },\r\n    label: {\r\n      control: 'text',\r\n    },\r\n    clicked: { action: 'clicked' },\r\n  },\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/helper-text/helper-text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HelperTextComponent>",
+                "defaultValue": "{\r\n  title: 'Components/HelperText',\r\n  component: HelperTextComponent,\r\n  tags: ['autodocs'],\r\n  args: {\r\n    text: 'Este es un helper text',\r\n    size: 'medium',\r\n    context: 'standalone',\r\n    type: 'info',\r\n    show: true,\r\n    ariaLive: 'off',\r\n  },\r\n  argTypes: {\r\n    text: {\r\n      control: 'text',\r\n      description: 'Texto del helper. También se puede proyectar contenido con ng-content.',\r\n      table: {\r\n        category: 'Contenido',\r\n        type: { summary: 'string' },\r\n        defaultValue: { summary: \"''\" },\r\n      },\r\n    },\r\n    size: {\r\n      control: { type: 'radio' },\r\n      options: ['small', 'medium', 'large', 'xlarge'],\r\n      description: 'Tamaño del helper text.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'small' | 'medium' | 'large' | 'xlarge'\" },\r\n        defaultValue: { summary: 'medium' },\r\n      },\r\n    },\r\n    context: {\r\n      control: { type: 'select' },\r\n      options: ['input', 'dropdown', 'standalone'],\r\n      description: 'Contexto visual del helper text para aplicar estilos específicos.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'input' | 'dropdown' | 'standalone'\" },\r\n        defaultValue: { summary: 'standalone' },\r\n      },\r\n    },\r\n    type: {\r\n      control: { type: 'select' },\r\n      options: ['info', 'success', 'warning', 'error'],\r\n      description: 'Tipo de mensaje que afecta color y accesibilidad.',\r\n      table: {\r\n        category: 'Estado',\r\n        type: { summary: \"'info' | 'success' | 'warning' | 'error'\" },\r\n        defaultValue: { summary: 'info' },\r\n      },\r\n    },\r\n    show: {\r\n      control: 'boolean',\r\n      description: 'Controla la visibilidad del helper text.',\r\n      table: {\r\n        category: 'Comportamiento',\r\n        type: { summary: 'boolean' },\r\n        defaultValue: { summary: 'true' },\r\n      },\r\n    },\r\n    ariaLive: {\r\n      control: { type: 'select' },\r\n      options: ['off', 'polite', 'assertive'],\r\n      description: 'Nivel de anuncio para lectores de pantalla.',\r\n      table: {\r\n        category: 'Accesibilidad',\r\n        type: { summary: \"'off' | 'polite' | 'assertive'\" },\r\n        defaultValue: { summary: 'off' },\r\n      },\r\n    },\r\n  },\r\n}"
             },
             {
                 "name": "meta",
@@ -339,6 +359,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonComponent>",
                 "file": "projects/components/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<HelperTextComponent>",
+                "file": "projects/components/src/lib/helper-text/helper-text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -581,6 +612,28 @@
                     "defaultValue": "{\r\n  args: {\r\n    color: 'warning',\r\n    variant: 'solid',\r\n  },\r\n}"
                 }
             ],
+            "projects/components/src/lib/helper-text/helper-text.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/helper-text/helper-text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/helper-text/helper-text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<HelperTextComponent>",
+                    "defaultValue": "{\r\n  title: 'Components/HelperText',\r\n  component: HelperTextComponent,\r\n  tags: ['autodocs'],\r\n  args: {\r\n    text: 'Este es un helper text',\r\n    size: 'medium',\r\n    context: 'standalone',\r\n    type: 'info',\r\n    show: true,\r\n    ariaLive: 'off',\r\n  },\r\n  argTypes: {\r\n    text: {\r\n      control: 'text',\r\n      description: 'Texto del helper. También se puede proyectar contenido con ng-content.',\r\n      table: {\r\n        category: 'Contenido',\r\n        type: { summary: 'string' },\r\n        defaultValue: { summary: \"''\" },\r\n      },\r\n    },\r\n    size: {\r\n      control: { type: 'radio' },\r\n      options: ['small', 'medium', 'large', 'xlarge'],\r\n      description: 'Tamaño del helper text.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'small' | 'medium' | 'large' | 'xlarge'\" },\r\n        defaultValue: { summary: 'medium' },\r\n      },\r\n    },\r\n    context: {\r\n      control: { type: 'select' },\r\n      options: ['input', 'dropdown', 'standalone'],\r\n      description: 'Contexto visual del helper text para aplicar estilos específicos.',\r\n      table: {\r\n        category: 'Estilo',\r\n        type: { summary: \"'input' | 'dropdown' | 'standalone'\" },\r\n        defaultValue: { summary: 'standalone' },\r\n      },\r\n    },\r\n    type: {\r\n      control: { type: 'select' },\r\n      options: ['info', 'success', 'warning', 'error'],\r\n      description: 'Tipo de mensaje que afecta color y accesibilidad.',\r\n      table: {\r\n        category: 'Estado',\r\n        type: { summary: \"'info' | 'success' | 'warning' | 'error'\" },\r\n        defaultValue: { summary: 'info' },\r\n      },\r\n    },\r\n    show: {\r\n      control: 'boolean',\r\n      description: 'Controla la visibilidad del helper text.',\r\n      table: {\r\n        category: 'Comportamiento',\r\n        type: { summary: 'boolean' },\r\n        defaultValue: { summary: 'true' },\r\n      },\r\n    },\r\n    ariaLive: {\r\n      control: { type: 'select' },\r\n      options: ['off', 'polite', 'assertive'],\r\n      description: 'Nivel de anuncio para lectores de pantalla.',\r\n      table: {\r\n        category: 'Accesibilidad',\r\n        type: { summary: \"'off' | 'polite' | 'assertive'\" },\r\n        defaultValue: { summary: 'off' },\r\n      },\r\n    },\r\n  },\r\n}"
+                }
+            ],
             "projects/components/src/lib/label/label.stories.ts": [
                 {
                     "name": "Default",
@@ -708,6 +761,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ButtonComponent>",
                     "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/components/src/lib/helper-text/helper-text.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HelperTextComponent>",
+                    "file": "projects/components/src/lib/helper-text/helper-text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -973,6 +1039,36 @@
             },
             {
                 "filePath": "projects/components/src/lib/button/button.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/helper-text/helper-text.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/helper-text/helper-text.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/helper-text/helper-text.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",

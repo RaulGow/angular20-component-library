@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'lib-label',
-  imports: [CommonModule],
+  imports: [],
   standalone: true,
   templateUrl: './label.component.html',
   styleUrls: ['./label.component.scss']

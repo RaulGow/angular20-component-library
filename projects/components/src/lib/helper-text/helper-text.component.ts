@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'lib-helper-text',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './helper-text.component.html',
   styleUrls: ['./helper-text.component.scss']
 })
